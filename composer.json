@@ -14,6 +14,12 @@
             "email": "weeladalah@yahoo.com"
         }
     ],
+    "repositories": [
+        {
+            "url": "https://github.com/w33ladalah/voyager-hooks.git",
+            "type": "git"
+        }
+    ],
     "require": {
         "illuminate/support": "~5.5|~6.0",
         "intervention/image": "^2.4",
@@ -21,7 +27,7 @@
         "larapack/doctrine-support": "~0.1.4",
         "arrilot/laravel-widgets": "^3.7",
         "league/flysystem": "~1.0.41",
-        "larapack/voyager-hooks": "~1.2.1",
+        "larapack/wldh-voyager-hooks": "~1.2.1",
         "ext-json": "*"
     },
     "require-dev": {
