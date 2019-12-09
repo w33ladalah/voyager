@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Tests;
+namespace WLDH\Voyager\Tests;
 
 use Illuminate\Support\Facades\Auth;
 

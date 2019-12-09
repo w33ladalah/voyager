@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Events;
+namespace WLDH\Voyager\Events;
 
 class FileDeleted
 {

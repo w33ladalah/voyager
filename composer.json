@@ -1,12 +1,12 @@
 {
-    "name": "tcg/voyager",
-    "description": "A Laravel Admin Package for The Control Group to make your life easier and steer your project in the right direction",
+    "name": "wldh/voyager",
+    "description": "The forked version of WLDH\\Voyager admin panel",
     "keywords": ["laravel", "admin", "panel"],
     "license": "MIT",
-    "homepage": "https://the-control-group.github.io/voyager/",
+    "homepage": "https://w33ladalah.github.io/voyager/",
     "support": {
-        "issues": "https://github.com/the-control-group/voyager/issues",
-        "source": "https://github.com/the-control-group/voyager"
+        "issues": "https://github.com/w33ladalah/voyager/issues",
+        "source": "https://github.com/w33ladalah/voyager"
     },
     "authors": [
         {
@@ -34,20 +34,20 @@
     },
     "autoload": {
         "psr-4": {
-            "TCG\\Voyager\\": "src/"
+            "WLDH\\Voyager\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TCG\\Voyager\\Tests\\": "tests/"
+            "WLDH\\Voyager\\Tests\\": "tests/"
       }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "TCG\\Voyager\\VoyagerServiceProvider",
-                "TCG\\Voyager\\Providers\\VoyagerDummyServiceProvider"
+                "WLDH\\Voyager\\VoyagerServiceProvider",
+                "WLDH\\Voyager\\Providers\\VoyagerDummyServiceProvider"
             ]
         }
     }

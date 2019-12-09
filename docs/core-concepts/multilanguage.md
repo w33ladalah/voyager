@@ -20,7 +20,7 @@ First you need to define some `locales` in your `config/voyager.php` file and `e
 After that you need to include the `Translatable` Trait in your model and define the translatable attributes:
 
 ```php
-use TCG\Voyager\Traits\Translatable;
+use WLDH\Voyager\Traits\Translatable;
 class Post extends Model
 {
     use Translatable;
@@ -110,7 +110,7 @@ This will update or create the translation for title of the post with the locale
 
 ### Query translatable Models
 
-To search for a translated value, you can use the `whereTranslation` method.  
+To search for a translated value, you can use the `whereTranslation` method.
 For example, to search for the slug of a post, you'd use
 
 ```php

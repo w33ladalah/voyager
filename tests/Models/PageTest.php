@@ -1,10 +1,10 @@
 <?php
 
-namespace TCG\Voyager\Tests;
+namespace WLDH\Voyager\Tests;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use TCG\Voyager\Models\Page;
+use WLDH\Voyager\Models\Page;
 
 class PageTest extends TestCase
 {

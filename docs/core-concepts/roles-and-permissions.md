@@ -35,7 +35,7 @@ Additionally you can `Generate permissions` for every BREAD type you create. Thi
 As an example, perhaps we are creating a new BREAD type from a `products` table. If we choose to `Generate permissions` for our `products` table. Our permission keys will be `browse_products`, `read_products`, `edit_products`, `add_products` and `delete_products`.
 
 {% hint style="info" %}
-**Notice**  
+**Notice**
 If a menu item is associated with any kind of BREAD, then it will check for the `browse` permission, for example for the `Posts` BREAD menu item, it will check for the `browse_posts` permission. If the user does not have the required permission, that menu item will be hidden.
 {% endhint %}
 
@@ -46,20 +46,20 @@ If you create a custom page and you want only allow specific user roles to acces
 This only works if your slug comes directly after `/admin/`. So for a custom page of the form `/admin/sub/foo` the menu item will not be hidden from  the menu.
 
 ### Create permission
-First, create a permission in the permissions table (you could use BREAD for example, model name is `TCG\Voyager\Models\Permission`). The column `table_name` should be set to null. The column `key` should be of the form `browse_slug` where `slug` has to be replaced with  the actual slug of your custom page. For example, to restrict access to your custom page with url `/admin/create_bill` you may create the permission `browse_create_bill`.
+First, create a permission in the permissions table (you could use BREAD for example, model name is `WLDH\Voyager\Models\Permission`). The column `table_name` should be set to null. The column `key` should be of the form `browse_slug` where `slug` has to be replaced with  the actual slug of your custom page. For example, to restrict access to your custom page with url `/admin/create_bill` you may create the permission `browse_create_bill`.
 
 ### Set role
 Check the permission for each role that you wish to grant access to the site at `admin/roles`. In the above example you would find a new checkbox called "Browse Create Bill". If a user does not have the required permission, the menu item leading to your custom page will be hidden.
 
 ### Customize controller
-You may create your own [gate](https://laravel.com/docs/authorization#gates) 
+You may create your own [gate](https://laravel.com/docs/authorization#gates)
 
 ```php
 Gate::define(`browse_create_bill`, function ($user) {
     return $user->hasPermission(`browse_create_bill`);
 });
 ```
-    
+
 to use `authorize` in your controller:
 
 ```php

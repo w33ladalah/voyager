@@ -1,22 +1,22 @@
 <?php
 
-namespace TCG\Voyager\Http\Controllers;
+namespace WLDH\Voyager\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use TCG\Voyager\Database\DatabaseUpdater;
-use TCG\Voyager\Database\Schema\Column;
-use TCG\Voyager\Database\Schema\Identifier;
-use TCG\Voyager\Database\Schema\SchemaManager;
-use TCG\Voyager\Database\Schema\Table;
-use TCG\Voyager\Database\Types\Type;
-use TCG\Voyager\Events\TableAdded;
-use TCG\Voyager\Events\TableDeleted;
-use TCG\Voyager\Events\TableUpdated;
-use TCG\Voyager\Facades\Voyager;
+use WLDH\Voyager\Database\DatabaseUpdater;
+use WLDH\Voyager\Database\Schema\Column;
+use WLDH\Voyager\Database\Schema\Identifier;
+use WLDH\Voyager\Database\Schema\SchemaManager;
+use WLDH\Voyager\Database\Schema\Table;
+use WLDH\Voyager\Database\Types\Type;
+use WLDH\Voyager\Events\TableAdded;
+use WLDH\Voyager\Events\TableDeleted;
+use WLDH\Voyager\Events\TableUpdated;
+use WLDH\Voyager\Facades\Voyager;
 
 class VoyagerDatabaseController extends Controller
 {

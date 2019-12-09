@@ -1,9 +1,9 @@
 <?php
 
-namespace TCG\Voyager\Listeners;
+namespace WLDH\Voyager\Listeners;
 
-use TCG\Voyager\Events\BreadAdded;
-use TCG\Voyager\Facades\Voyager;
+use WLDH\Voyager\Events\BreadAdded;
+use WLDH\Voyager\Facades\Voyager;
 
 class AddBreadPermission
 {

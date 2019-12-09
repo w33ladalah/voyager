@@ -1,13 +1,13 @@
 <?php
 
-namespace TCG\Voyager\Models;
+namespace WLDH\Voyager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
-use TCG\Voyager\Database\Schema\SchemaManager;
-use TCG\Voyager\Facades\Voyager;
-use TCG\Voyager\Traits\Translatable;
+use WLDH\Voyager\Database\Schema\SchemaManager;
+use WLDH\Voyager\Facades\Voyager;
+use WLDH\Voyager\Traits\Translatable;
 
 class DataType extends Model
 {

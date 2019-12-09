@@ -1,8 +1,8 @@
 # Custom guard
 
-Starting with Voyager 1.2 you can define a \(custom\) guard which is used throughout Voyager.  
-To do so, just bind the name of your auth-guard to `VoyagerGuard`.  
-First, make sure you have defined a guard as per the [Laravel documentation](https://laravel.com/docs/authentication#adding-custom-guards).  
+Starting with Voyager 1.2 you can define a \(custom\) guard which is used throughout Voyager.
+To do so, just bind the name of your auth-guard to `VoyagerGuard`.
+First, make sure you have defined a guard as per the [Laravel documentation](https://laravel.com/docs/authentication#adding-custom-guards).
 After that open your `AuthServiceProvider` and add the following to the register method:
 
 ```php
@@ -16,7 +16,7 @@ Now this guard is used instead of the default guard.
 
 # Example - using a different model and table for Admins
 
-First you have to create a new table. Let's call it `admins`:  
+First you have to create a new table. Let's call it `admins`:
 ```php
 <?php
 Schema::create('admins', function (Blueprint $table) {
@@ -40,7 +40,7 @@ and a model which extends Voyagers user-model:
 
 namespace App;
 
-class Admin extends \TCG\Voyager\Models\User
+class Admin extends \WLDH\Voyager\Models\User
 {
 
 }
@@ -69,7 +69,7 @@ And a user provider called `admins`:
 ],
 ```
 
-Next you have to tell Voyager to use your new guard.  
+Next you have to tell Voyager to use your new guard.
 Open you `AppServiceProvider.php` and add the following to the `register` method:
 
 ```php
@@ -82,6 +82,6 @@ public function register()
 ```
 
 {% hint style="info" %}
-Please note that the user-bread is still responsible to edit users - not admins.  
+Please note that the user-bread is still responsible to edit users - not admins.
 Create a BREAD for the `admins` table if you want to change Admins.
 {% endhint %}

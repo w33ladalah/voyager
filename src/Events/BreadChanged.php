@@ -1,9 +1,9 @@
 <?php
 
-namespace TCG\Voyager\Events;
+namespace WLDH\Voyager\Events;
 
 use Illuminate\Queue\SerializesModels;
-use TCG\Voyager\Models\DataType;
+use WLDH\Voyager\Models\DataType;
 
 class BreadChanged
 {

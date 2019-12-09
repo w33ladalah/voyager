@@ -1,10 +1,10 @@
 <?php
 
-namespace TCG\Voyager\Policies;
+namespace WLDH\Voyager\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use TCG\Voyager\Contracts\User;
-use TCG\Voyager\Facades\Voyager;
+use WLDH\Voyager\Contracts\User;
+use WLDH\Voyager\Facades\Voyager;
 
 class BasePolicy
 {
@@ -25,7 +25,7 @@ class BasePolicy
         if (count($arguments) < 2) {
             throw new \InvalidArgumentException('not enough arguments');
         }
-        /** @var \TCG\Voyager\Contracts\User $user */
+        /** @var \WLDH\Voyager\Contracts\User $user */
         $user = $arguments[0];
 
         /** @var $model */
@@ -37,7 +37,7 @@ class BasePolicy
     /**
      * Check if user has an associated permission.
      *
-     * @param \TCG\Voyager\Contracts\User $user
+     * @param \WLDH\Voyager\Contracts\User $user
      * @param object                      $model
      * @param string                      $action
      *

@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Traits;
+namespace WLDH\Voyager\Traits;
 
 trait AlertsMessages
 {

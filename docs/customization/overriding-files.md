@@ -13,7 +13,7 @@ Alternatively you can override the views for **all** BREADs by creating any of t
 
 ## Using custom Controllers
 #### Overriding submit button:
-You can override the submit button without the need to override the whole `edit-add.blade.php` by extending the `submit-buttons` section:  
+You can override the submit button without the need to override the whole `edit-add.blade.php` by extending the `submit-buttons` section:
 ```blade
 @extends('voyager::bread.edit-add')
 @section('submit-buttons')
@@ -31,7 +31,7 @@ You can override the controller for a single BREAD by creating a controller whic
 
 namespace App\Http\Controllers;
 
-class VoyagerCategoriesController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
+class VoyagerCategoriesController extends \WLDH\Voyager\Http\Controllers\VoyagerBaseController
 {
     //...
 }
@@ -66,7 +66,7 @@ Then run `php artisan voyager:controllers`, Voyager will now use the child contr
 
 ## Overriding Voyager-Models
 
-You are also able to override Voyagers models if you need to.  
+You are also able to override Voyagers models if you need to.
 To do so, you need to add the following to your AppServiceProviders register method:
 
 ```php
@@ -82,7 +82,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Events\Dispatcher;
-use TCG\Voyager\Facades\Voyager;
+use WLDH\Voyager\Facades\Voyager;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -101,7 +101,7 @@ The next step is to create your model and make it extend the original model. In 
 
 namespace App;
 
-class DataRow extends \TCG\Voyager\Models\DataRow
+class DataRow extends \WLDH\Voyager\Models\DataRow
 {
     // ...
 }

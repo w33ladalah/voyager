@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Contracts;
+namespace WLDH\Voyager\Contracts;
 
 interface User
 {

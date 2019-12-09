@@ -1,8 +1,8 @@
 <?php
 
-namespace TCG\Voyager;
+namespace WLDH\Voyager;
 
-use TCG\Voyager\Alert\Components\ComponentInterface;
+use WLDH\Voyager\Alert\Components\ComponentInterface;
 
 class Alert
 {

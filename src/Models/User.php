@@ -1,11 +1,11 @@
 <?php
 
-namespace TCG\Voyager\Models;
+namespace WLDH\Voyager\Models;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use TCG\Voyager\Contracts\User as UserContract;
-use TCG\Voyager\Traits\VoyagerUser;
+use WLDH\Voyager\Contracts\User as UserContract;
+use WLDH\Voyager\Traits\VoyagerUser;
 
 class User extends Authenticatable implements UserContract
 {

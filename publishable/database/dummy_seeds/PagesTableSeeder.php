@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use TCG\Voyager\Models\DataRow;
-use TCG\Voyager\Models\DataType;
-use TCG\Voyager\Models\Menu;
-use TCG\Voyager\Models\MenuItem;
-use TCG\Voyager\Models\Page;
-use TCG\Voyager\Models\Permission;
+use WLDH\Voyager\Models\DataRow;
+use WLDH\Voyager\Models\DataType;
+use WLDH\Voyager\Models\Menu;
+use WLDH\Voyager\Models\MenuItem;
+use WLDH\Voyager\Models\Page;
+use WLDH\Voyager\Models\Permission;
 
 class PagesTableSeeder extends Seeder
 {
@@ -25,7 +25,7 @@ class PagesTableSeeder extends Seeder
                 'display_name_singular' => __('voyager::seeders.data_types.page.singular'),
                 'display_name_plural'   => __('voyager::seeders.data_types.page.plural'),
                 'icon'                  => 'voyager-file-text',
-                'model_name'            => 'TCG\\Voyager\\Models\\Page',
+                'model_name'            => 'WLDH\\Voyager\\Models\\Page',
                 'controller'            => '',
                 'generate_permissions'  => 1,
                 'description'           => '',

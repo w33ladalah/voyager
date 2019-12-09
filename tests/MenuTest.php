@@ -1,9 +1,9 @@
 <?php
 
-namespace TCG\Voyager\Tests;
+namespace WLDH\Voyager\Tests;
 
 use Illuminate\Support\Facades\Auth;
-use TCG\Voyager\Models\Menu;
+use WLDH\Voyager\Models\Menu;
 
 class MenuTest extends TestCase
 {

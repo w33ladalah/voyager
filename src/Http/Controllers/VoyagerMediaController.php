@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Http\Controllers;
+namespace WLDH\Voyager\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Intervention\Image\Facades\Image;
 use League\Flysystem\Plugin\ListWith;
-use TCG\Voyager\Events\MediaFileAdded;
-use TCG\Voyager\Facades\Voyager;
+use WLDH\Voyager\Events\MediaFileAdded;
+use WLDH\Voyager\Facades\Voyager;
 
 class VoyagerMediaController extends Controller
 {

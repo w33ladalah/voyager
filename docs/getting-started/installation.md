@@ -31,7 +31,7 @@ php artisan voyager:install --with-dummy
 ```
 
 {% hint style="danger" %}
-**Specified key was too long error**  
+**Specified key was too long error**
 If you see this error message you have an outdated version of MySQL, use the following solution: [https://laravel-news.com/laravel-5-4-key-too-long-error](https://laravel-news.com/laravel-5-4-key-too-long-error)
 {% endhint %}
 
@@ -41,11 +41,11 @@ Start up a local development server with `php artisan serve` And, visit the URL 
 
 If you installed with the dummy data, a user has been created for you with the following login credentials:
 
-> **email:** `admin@admin.com`  
+> **email:** `admin@admin.com`
 > **password:** `password`
 
 {% hint style="info" %}
-**Quick note**  
+**Quick note**
 A dummy user is **only** created if there are no current users in your database.
 {% endhint %}
 
@@ -70,7 +70,7 @@ This section is meant for users who are installing Voyager on an already existin
 The first thing you should do is publish the assets that come with Voyager. You can do that by running the following commands:
 
 ```bash
-php artisan vendor:publish --provider="TCG\Voyager\VoyagerServiceProvider"
+php artisan vendor:publish --provider="WLDH\Voyager\VoyagerServiceProvider"
 php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
 ```
 
@@ -80,12 +80,12 @@ Next, call `php artisan migrate` to migrate all Voyager table.
 If you want to change migrations, for example to use a different table for users, don't migrate. Instead copy Voyagers migrations to `database/migrations`, make your changes, turn off the config option `database.autoload_migrations` and then migrate.
 {% endhint %}
 
-Now, open your User-Model \(usually `app/User.php`\) and make the class extend `\TCG\Voyager\Models\User` instead of `Authenticatable`.
+Now, open your User-Model \(usually `app/User.php`\) and make the class extend `\WLDH\Voyager\Models\User` instead of `Authenticatable`.
 
 ```php
 <?php
 
-class User extends \TCG\Voyager\Models\User
+class User extends \WLDH\Voyager\Models\User
 {
     // ...
 }
@@ -101,12 +101,12 @@ Route::group(['prefix' => 'admin'], function () {
 });
 ```
 
-Now run  
-`php artisan db:seed --class=VoyagerDatabaseSeeder`  
-to seed some necessary data to your database,  
-`php artisan hook:setup`  
-to install the hooks system, and  
-`php artisan storage:link`  
+Now run
+`php artisan db:seed --class=VoyagerDatabaseSeeder`
+to seed some necessary data to your database,
+`php artisan hook:setup`
+to install the hooks system, and
+`php artisan storage:link`
 to create the storage symlink to your public folder.
 
 After that, run `composer dump-autoload` to finish your installation!

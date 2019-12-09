@@ -1,6 +1,6 @@
 <?php
 
-namespace TCG\Voyager\Alert\Components;
+namespace WLDH\Voyager\Alert\Components;
 
 class TitleComponent extends AbstractComponent
 {

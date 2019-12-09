@@ -1,10 +1,10 @@
 <?php
 
-namespace TCG\Voyager\Tests\Feature;
+namespace WLDH\Voyager\Tests\Feature;
 
 use Illuminate\Support\Facades\Auth;
-use TCG\Voyager\Facades\Voyager;
-use TCG\Voyager\Tests\TestCase;
+use WLDH\Voyager\Facades\Voyager;
+use WLDH\Voyager\Tests\TestCase;
 
 class DashboardTest extends TestCase
 {
